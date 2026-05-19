@@ -11,6 +11,7 @@ targets:
   SwiftUISecureFieldDemo:
     type: application
     platform: macOS
+    productName: SwiftUISecureFieldDemo
     sources:
       - Sources
     settings:
@@ -21,3 +22,10 @@ targets:
         CODE_SIGN_STYLE: Manual
         DEVELOPMENT_TEAM: ""
         ENABLE_HARDENED_RUNTIME: NO
+schemes:
+  SwiftUISecureFieldDemo:
+    build:
+      targets:
+        SwiftUISecureFieldDemo: all
+    run:
+      config: Debug
